@@ -1,9 +1,13 @@
 
 
+#################
+# LEFT join     #
+################
+Joiture de deux tables : etudiants, niveau
+-----------------------------------------------------------------------------------
 
-
-
-
+SELECT etudiants.nom,etudiants.prenom, etudiants.sexe, etudiants.adresse, niveau.libelle as niveau
+    FROM etudiants LEFT JOIN niveau  ON  niveau.id = etudiants.id_niveau;
 
 #################
 # Inner join   #

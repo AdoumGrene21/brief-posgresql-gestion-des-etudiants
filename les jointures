@@ -1,4 +1,8 @@
-
+#################
+# Jointure simple en utilisants WHERE   #
+################
+Joiture de trois tables : etudiants, niveau et filieres
+-----------------------------------------------------------------------------------
 
 #################
 # LEFT join     #

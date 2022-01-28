@@ -9,13 +9,13 @@
 # Inner join   #
 ################
 Joiture de trois tables : etudiants, niveau et filieres
------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 
-SELECT etudiants.nom,etudiants.prenom, etudiants.sexe, etudiants.adresse, niveau.libelle as niveau, filieres.name as filiere
-    FROM ((etudiants INNER JOIN niveau  ON  niveau.id = etudiants.id_niveau)
-    INNER JOIN filieres ON filieres.id = etudiants.id_niveau); 
+    SELECT etudiants.nom,etudiants.prenom, etudiants.sexe, etudiants.adresse, niveau.libelle as niveau, filieres.name as filiere
+        FROM ((etudiants INNER JOIN niveau  ON  niveau.id = etudiants.id_niveau)
+        INNER JOIN filieres ON filieres.id = etudiants.id_niveau); 
  
- --------------------------------------------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------------------------------------------------------
 
 
     nom     |   prenom    |    sexe     |               adresse                | niveau |   filiere    
